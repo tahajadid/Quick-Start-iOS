@@ -1,0 +1,6 @@
+framework module Pods_Quick_Start_iOS_Quick_Start_iOSUITests {
+  umbrella header "Pods-Quick-Start-iOS-Quick-Start-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

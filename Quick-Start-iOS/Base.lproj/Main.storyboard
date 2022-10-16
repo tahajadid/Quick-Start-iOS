@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oaC-tL-Uqg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,67 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quick_Start_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="x9o-Ct-3HV">
+                                <rect key="frame" x="97" y="188" width="220" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Mbo-A3-uFp"/>
+                                    <constraint firstAttribute="width" constant="220" id="m2Q-aR-LFu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FootBall News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-an-ksV">
+                                <rect key="frame" x="102.5" y="608" width="209" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.96862745098039216" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FootBall News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-Th-08N">
+                                <rect key="frame" x="102.5" y="617.5" width="209" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.96862745098039216" blue="0.9137254901960784" alpha="0.26981581125827814" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.27450980390000002" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Paa-Th-08N" firstAttribute="top" secondItem="L8T-an-ksV" secondAttribute="bottom" constant="-26" id="8CL-sf-sMs"/>
+                            <constraint firstItem="Paa-Th-08N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dk3-9U-D1a"/>
+                            <constraint firstItem="L8T-an-ksV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBR-k9-Nta"/>
+                            <constraint firstItem="x9o-Ct-3HV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="MiO-gb-Kje"/>
+                            <constraint firstItem="L8T-an-ksV" firstAttribute="top" secondItem="x9o-Ct-3HV" secondAttribute="bottom" constant="20" id="hsc-md-0vi"/>
+                            <constraint firstItem="x9o-Ct-3HV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ti7-Zk-csX"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DA5-Ks-Iud"/>
+                    <connections>
+                        <outlet property="animateView" destination="x9o-Ct-3HV" id="QYK-ye-I5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="502.89855072463774" y="215.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nqb-JS-5HO">
+            <objects>
+                <navigationController id="oaC-tL-Uqg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wz9-EH-iaR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h8U-NK-Drb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1UT-W9-Al4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264" y="216"/>
         </scene>
     </scenes>
 </document>

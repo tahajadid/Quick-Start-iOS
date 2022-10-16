@@ -18,7 +18,6 @@
 		9C696C0628FC88A60082EC40 /* Quick_Start_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C696C0528FC88A60082EC40 /* Quick_Start_iOSTests.swift */; };
 		9C696C1028FC88A60082EC40 /* Quick_Start_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C696C0F28FC88A60082EC40 /* Quick_Start_iOSUITests.swift */; };
 		9C696C1228FC88A60082EC40 /* Quick_Start_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C696C1128FC88A60082EC40 /* Quick_Start_iOSUITestsLaunchTests.swift */; };
-		9C696C1F28FC8AE30082EC40 /* ball.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C696C1E28FC8AE30082EC40 /* ball.json */; };
 		9C696C2528FC8E660082EC40 /* new_ball.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C696C2428FC8E660082EC40 /* new_ball.json */; };
 		B69DB0E21C154CCD2CCB50F6 /* Pods_Quick_Start_iOS_Quick_Start_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101EA82ADD7AC2D94E5CDA78 /* Pods_Quick_Start_iOS_Quick_Start_iOSUITests.framework */; };
 		F0E09F4C66769B1CEB0B2AD2 /* Pods_Quick_Start_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C321246A52A75E6670AF9E /* Pods_Quick_Start_iOS.framework */; };
@@ -61,7 +60,6 @@
 		9C696C0B28FC88A60082EC40 /* Quick-Start-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick-Start-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C696C0F28FC88A60082EC40 /* Quick_Start_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Start_iOSUITests.swift; sourceTree = "<group>"; };
 		9C696C1128FC88A60082EC40 /* Quick_Start_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quick_Start_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9C696C1E28FC8AE30082EC40 /* ball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ball.json; sourceTree = "<group>"; };
 		9C696C2428FC8E660082EC40 /* new_ball.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = new_ball.json; path = ../../../../Downloads/new_ball.json; sourceTree = "<group>"; };
 		A5610FF4C8242B65CF882D9C /* Pods-Quick-Start-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick-Start-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Quick-Start-iOSTests/Pods-Quick-Start-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A74292A60D0A0358B56196A8 /* Pods-Quick-Start-iOS-Quick-Start-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick-Start-iOS-Quick-Start-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick-Start-iOS-Quick-Start-iOSUITests/Pods-Quick-Start-iOS-Quick-Start-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		9C696BEA28FC88A20082EC40 /* Quick-Start-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9C696C1E28FC8AE30082EC40 /* ball.json */,
 				9C696C2428FC8E660082EC40 /* new_ball.json */,
 				9C696BEB28FC88A20082EC40 /* AppDelegate.swift */,
 				9C696BED28FC88A20082EC40 /* SceneDelegate.swift */,
@@ -285,7 +282,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C696C1F28FC8AE30082EC40 /* ball.json in Resources */,
 				9C696BFB28FC88A60082EC40 /* LaunchScreen.storyboard in Resources */,
 				9C696BF828FC88A60082EC40 /* Assets.xcassets in Resources */,
 				9C696C2528FC8E660082EC40 /* new_ball.json in Resources */,
