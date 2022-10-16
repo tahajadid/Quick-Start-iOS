@@ -6,12 +6,25 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
+    private var myAnimationView: AnimationView?
+
+    @IBOutlet weak var animateView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        myAnimationView = .init(name: "new_ball")
+        myAnimationView!.frame = animateView.bounds
+        myAnimationView!.contentMode = .scaleAspectFill
+        myAnimationView!.loopMode = .repeat(1.0)
+        animateView.addSubview(myAnimationView!)
+        myAnimationView!.play()
+            
+
     }
 
 
