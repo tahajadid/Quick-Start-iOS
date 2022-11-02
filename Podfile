@@ -7,6 +7,7 @@ target 'Quick-Start-iOS' do
 
   # Pods for Quick-Start-iOS
   pod 'lottie-ios'
+  pod 'Alamofire'
 
   target 'Quick-Start-iOSTests' do
     inherit! :search_paths

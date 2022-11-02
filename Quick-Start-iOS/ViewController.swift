@@ -24,6 +24,14 @@ class ViewController: UIViewController {
         animateView.addSubview(myAnimationView!)
         myAnimationView!.play()
             
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.7) {
+
+            if let navigationController = self.navigationController {
+              navigationController.pushViewController(HomeViewController(), animated: true)
+            }
+            
+        }
 
     }
 
