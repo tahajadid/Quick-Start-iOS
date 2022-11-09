@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myAnimationView = .init(name: "new_ball")
+        myAnimationView = .init(name: "newball")
         myAnimationView!.frame = animateView.bounds
         myAnimationView!.contentMode = .scaleAspectFill
         myAnimationView!.loopMode = .repeat(1.0)

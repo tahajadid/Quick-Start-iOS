@@ -14,22 +14,25 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        APICaller().getReques()
-        /*
+        //APICaller().getReques()
+        
         APICaller().getNews { [weak self] result in
             switch result {
             case .success(let news):
                 self?.news = news
                 print("(( in success))")
 
-                print(self?.news)
+                print(self?.news.count)
+                
+                print("(( end success))")
+
 
             case .failure(let error):
                 print(error.localizedDescription)
             }
             
         }
-         */
+         
 
     }
 
