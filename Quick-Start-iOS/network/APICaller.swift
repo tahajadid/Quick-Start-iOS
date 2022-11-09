@@ -51,20 +51,22 @@ class APICaller {
     }
     
     
+    /*
     func getReques(){
         
         let request = AF.request("\(Constants.baseURL2)")
                                  
         request.responseJSON {  (data) in
             print(data)
-            let welcome = try? JSONDecoder().decode(Welcome.self, from: data.data)
-            welcome.getNews { <#Result<[News], Error>#> in
-                Result[
+            let welcome = try? JSONDecoder().decode(Welcome.self, from: data.data!)
+            welcome.getNews { Result<[News], Error> in
+                print("Result.success()")
             }
             print("--- Last --- : ",welcome)
         }
     }
 
+     */
     
 }
 
