@@ -9,6 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
+
     private var news : [News] = [News]()
 
     override func viewDidLoad() {
